@@ -1,10 +1,10 @@
 sceneSetups:
-- path: Assets/characterScene.unity
+- path: Assets/Scenes/characterScene.unity
+  isLoaded: 0
+  isActive: 0
+- path: Assets/Scenes/backgroundScene.unity
+  isLoaded: 1
+  isActive: 0
+- path: Assets/Scenes/obstacles.unity
   isLoaded: 1
   isActive: 1
-- path: Assets/backgroundScene.unity
-  isLoaded: 0
-  isActive: 0
-- path: Assets/obstacles.unity
-  isLoaded: 0
-  isActive: 0
