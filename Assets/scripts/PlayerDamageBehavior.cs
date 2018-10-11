@@ -34,7 +34,7 @@ public class PlayerDamageBehavior : MonoBehaviour {
             // ... the player is in range.
             Debug.Log("player touched obstacle");
             var pe = Instantiate(deathPrefabParticleSystem, gameObject.transform.position, gameObject.transform.rotation);
-            Destroy(pe, 4000);
+            Destroy(pe, 4);
         }
     }
 }
