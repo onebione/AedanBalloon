@@ -20,12 +20,13 @@ public class SceneControllerBehavior : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        Debug.Log(TimeBetweenObstacles);
+        //Debug.Log("Time Between Obstacle" + TimeBetweenObstacles);
         TimeBetweenObstacles -= Time.deltaTime;
         if (TimeBetweenObstacles <= 0)
         {
+            //create an obstacle from time to time. 
             var x = Random.Range(StartX, EndX);
-            var pos = new Vector3(x, StartY, 3);
+            var pos = new Vector3(x, StartY, -1);
             Instantiate(Obstacle, pos, Quaternion.identity);
             TimeBetweenObstacles = FixedTimeBetweenObstacles;
         }

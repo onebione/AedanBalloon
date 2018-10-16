@@ -40,6 +40,8 @@ GameObject:
   - component: {fileID: 61473487077196068}
   - component: {fileID: 50068559768747578}
   - component: {fileID: 114324229033677272}
+  - component: {fileID: 114599057860190934}
+  - component: {fileID: 114358708736740950}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -106,7 +108,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.03556943, y: 0.015808582}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -117,7 +119,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.3676548, y: 0.3913679}
   m_EdgeRadius: 0
 --- !u!95 &95539618667552628
 Animator:
@@ -147,6 +149,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ae2051f870a63247b1cc9381f69576e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathPrefabParticleSystem: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439,
+    type: 2}
+--- !u!114 &114358708736740950
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1739299258571162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8c8b477993b5d742a653c32c4b552ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_JumpForce: 400
+  m_CrouchSpeed: 0.36
+  m_MovementSmoothing: 0.05
+  m_AirControl: 0
+  m_WhatIsGround:
+    serializedVersion: 2
+    m_Bits: 0
+  m_GroundCheck: {fileID: 0}
+  m_CrouchDisableCollider: {fileID: 0}
+  OnLandEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnCrouchEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: PlayerController+BoolEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+--- !u!114 &114599057860190934
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1739299258571162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9f221e347fa5f744b8eb067aea0e37d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 114358708736740950}
+  speed: 10
 --- !u!212 &212415931622699646
 SpriteRenderer:
   m_ObjectHideFlags: 1

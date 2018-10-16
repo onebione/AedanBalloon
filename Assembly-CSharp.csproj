@@ -57,7 +57,9 @@
   <ItemGroup>
     <Compile Include="Assets\scripts\MovingDownBehavior.cs" />
     <Compile Include="Assets\scripts\ObstacleDamageBehavior.cs" />
+    <Compile Include="Assets\scripts\PlayerController.cs" />
     <Compile Include="Assets\scripts\PlayerDamageBehavior.cs" />
+    <Compile Include="Assets\scripts\PlayerMovement.cs" />
     <Compile Include="Assets\scripts\PlayerPropertyBehavior.cs" />
     <Compile Include="Assets\scripts\RepeatingBackground.cs" />
     <Compile Include="Assets\scripts\SceneControllerBehavior.cs" />
