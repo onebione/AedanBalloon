@@ -32,6 +32,10 @@ public class PlayerController : MonoBehaviour
     private bool m_FacingRight = true;  // For determining which way the player is currently facing.
     private Vector3 m_Velocity = Vector3.zero;
 
+    //decide how far the player can move around on screen
+    public float leftXWall;//-1.97
+    public float rightXWall;//1.34
+
     [Header("Events")]
     [Space]
 
@@ -76,6 +80,12 @@ public class PlayerController : MonoBehaviour
 
     public void Move(float move, bool crouch, bool jump)
     {
+        //Debug.Log("move: " + move + "   position x: " + gameObject.transform.position.x);
+        ////dont allow player to go out of bounds
+        //if (move < 0 && gameObject.transform.position.x < leftXWall) return;
+        //if (move > 0 && gameObject.transform.position.x > rightXWall) return;
+
+
         // If crouching, check to see if the character can stand up
         if (!crouch)
         {
@@ -121,9 +131,10 @@ public class PlayerController : MonoBehaviour
 
             // Move the character by finding the target velocity
             Vector3 targetVelocity = new Vector2(move * 10f, m_Rigidbody2D.velocity.y);
+            
             // And then smoothing it out and applying it to the character
             m_Rigidbody2D.velocity = Vector3.SmoothDamp(m_Rigidbody2D.velocity, targetVelocity, ref m_Velocity, m_MovementSmoothing);
-
+            
             // If the input is moving the player right and the player is facing left...
             if (move > 0 && !m_FacingRight)
             {

@@ -28,7 +28,7 @@ public class SceneControllerBehavior : MonoBehaviour {
             var x = Random.Range(StartX, EndX);
             var pos = new Vector3(x, StartY, -1);
             Instantiate(Obstacle, pos, Quaternion.identity);
-            TimeBetweenObstacles = FixedTimeBetweenObstacles;
+            TimeBetweenObstacles = Random.Range(FixedTimeBetweenObstacles, FixedTimeBetweenObstacles + 2);
         }
     }
 }

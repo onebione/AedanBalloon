@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Fire
   - obstacles
+  - coin
   layers:
   - Default
   - TransparentFX
@@ -40,6 +41,18 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 1413653597
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Obstacles
+    uniqueID: 2229117371
+    locked: 0
+  - name: Coins
+    uniqueID: 787604829
+    locked: 0
+  - name: Player
+    uniqueID: 3632126407
     locked: 0

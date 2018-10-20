@@ -20,7 +20,6 @@ public class PlayerDamageBehavior : MonoBehaviour {
         // add isTrigger
         var boxCollider = gameObject.GetComponent<BoxCollider2D>();
         boxCollider.isTrigger = true;
-
     }
 
     //dont get how this is triggered, since this is a script and not a object. 

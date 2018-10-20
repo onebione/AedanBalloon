@@ -55,6 +55,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\scripts\CoinController.cs" />
+    <Compile Include="Assets\scripts\CoinGenerator.cs" />
     <Compile Include="Assets\scripts\MovingDownBehavior.cs" />
     <Compile Include="Assets\scripts\ObstacleDamageBehavior.cs" />
     <Compile Include="Assets\scripts\PlayerController.cs" />
@@ -63,6 +65,7 @@
     <Compile Include="Assets\scripts\PlayerPropertyBehavior.cs" />
     <Compile Include="Assets\scripts\RepeatingBackground.cs" />
     <Compile Include="Assets\scripts\SceneControllerBehavior.cs" />
+    <Compile Include="Assets\scripts\ScoreManager.cs" />
     <Reference Include="UnityEngine.UI">
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
     </Reference>

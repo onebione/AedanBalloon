@@ -2,7 +2,16 @@ sceneSetups:
 - path: Assets/Scenes/characterScene.unity
   isLoaded: 0
   isActive: 0
+- path: Assets/Scenes/tryCollider.unity
+  isLoaded: 0
+  isActive: 0
 - path: Assets/Scenes/backgroundScene.unity
+  isLoaded: 0
+  isActive: 0
+- path: Assets/Scenes/coin.unity
+  isLoaded: 0
+  isActive: 0
+- path: Assets/Scenes/UIElements.unity
   isLoaded: 0
   isActive: 0
 - path: Assets/Scenes/obstacles.unity
